@@ -2,6 +2,7 @@
     --black: #121212;
     --darkgray: #5f6368;
     --main: rgb(43, 42, 51);
+    --purple: #BB86FC;
 }
 
 * {
@@ -74,14 +75,17 @@ input:focus {
 }
 
 .menu li {
-    justify-self: stretch;
 }
 
 .menu button{
+    display: grid;
+    width: 80%;
     padding: 15px 30px 15px 30px;
     border-radius: 100px;
     border: none;
-    background-color: var(--darkgray);
+    justify-items: center;
+    font-weight: bold;
+    background-color: var(--purple);
 }
 
 .sidebar {
@@ -114,7 +118,20 @@ input:focus {
 
 
 .card {
+    display: grid;
     background-color: var(--darkgray);
+    border-radius: 10px;
+    padding: 0px 50px 0px 50px;
+    border-left-style: solid;
+    border-left-width: 10px;
+    border-left-color: #BB86FC;
+}
+
+.title {
+    display: grid;
+    align-self: center;
+    font-size: large;
+    font-weight: bold;
 }
 
 .announcements {
