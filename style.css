@@ -215,11 +215,32 @@ menu li:nth-child(7) {
     font-weight: bold;
 }
 
-.announcements {
-    display: grid;  
+.content-header{
+    padding-bottom: 10px;
+}
+
+.a-container {
+    display: grid;
+    background-color: var(--darkgray);
+    border-radius: 20px;
     gap: 15px;
     margin-left: 20px;
     margin-right: 20px;
+    padding: 10px 20px 10px 20px;
+}
+
+.a-container div:not(:last-child) {
+    border-bottom: 1px solid var(--purple);
+}
+
+.a-card {
+    display: grid;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+
+.a-title {
+    font-weight: bold;
 }
 
 .trending {
